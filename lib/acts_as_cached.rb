@@ -35,6 +35,9 @@ module ActsAsCached
       if find_by = options.delete(:find_by)
         options[:finder]   = "find_by_#{find_by}".to_sym
         options[:cache_id] = find_by
+      elsif find_by = ActsAsCached.config[:find_by]
+        options[:finder]   = "find_by_#{find_by}".to_sym
+        options[:cache_id] = find_by
       end
       
       cache_config.replace  options.reject { |key,| not Config.valued_keys.include? key }
