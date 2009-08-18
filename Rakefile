@@ -40,3 +40,15 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'doc' # rdoc output folder
   rdoc.options << '--inline-source'
 end
+
+require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "cache_fu"
+    gemspec.summary = "Summarize your gem"
+    gemspec.description = "Describe your gem"
+    gemspec.email = "chris@ozmm.org"
+    gemspec.homepage = "http://github.com/defunkt/cache_fu"
+    gemspec.description = "DESCRIPTION!"
+    gemspec.authors = ["Chris Wanstrath"]
+  end
+
