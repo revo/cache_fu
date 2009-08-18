@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
      "lib/acts_as_cached/local_cache.rb",
      "lib/acts_as_cached/memcached_rails.rb",
      "lib/acts_as_cached/recipes.rb",
-     "lib/init.rb",
+     "lib/cache_fu.rb",
      "tasks/memcached.rake",
      "test/benchmarking_test.rb",
      "test/cache_test.rb",
