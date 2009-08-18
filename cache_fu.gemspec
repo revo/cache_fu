@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cache_fu}
-  s.version = "1.0.0"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Wanstrath"]
@@ -26,8 +26,6 @@ Gem::Specification.new do |s|
      "defaults/extensions.rb.default",
      "defaults/memcached.yml.default",
      "defaults/memcached_ctl.default",
-     "init.rb",
-     "install.rb",
      "lib/acts_as_cached.rb",
      "lib/acts_as_cached/benchmarking.rb",
      "lib/acts_as_cached/cache_methods.rb",
@@ -37,6 +35,7 @@ Gem::Specification.new do |s|
      "lib/acts_as_cached/local_cache.rb",
      "lib/acts_as_cached/memcached_rails.rb",
      "lib/acts_as_cached/recipes.rb",
+     "lib/init.rb",
      "tasks/memcached.rake",
      "test/benchmarking_test.rb",
      "test/cache_test.rb",
